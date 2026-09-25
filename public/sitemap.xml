@@ -1,42 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <!-- Primary landing page and phone UI imagery. -->
   <url>
     <loc>https://defimartonline.com/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://defimartonline.com/assets/1-B9QeUf5K.jpg</image:loc>
+      <image:title>DefiMart campus marketplace app screen</image:title>
+      <image:caption>Shop verified products through the DefiMart student marketplace.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://defimartonline.com/assets/2-B8FzPIiB.jpg</image:loc>
+      <image:title>DefiMart product discovery app screen</image:title>
+      <image:caption>Discover trusted products and sellers near campus.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://defimartonline.com/assets/3-Bg-qcVPw.jpg</image:loc>
+      <image:title>DefiMart independent seller app screen</image:title>
+      <image:caption>Explore student creators and independent campus brands.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://defimartonline.com/assets/4-DuluxZmV.jpg</image:loc>
+      <image:title>DefiMart pay on pickup app screen</image:title>
+      <image:caption>Reserve products online and pay safely on pickup.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://defimartonline.com/assets/5-C93olgC9.jpg</image:loc>
+      <image:title>DefiMart order tracking app screen</image:title>
+      <image:caption>Track orders and manage secure campus handoffs.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://defimartonline.com/assets/6-HcbFIJXC.jpg</image:loc>
+      <image:title>DefiMart campus pickup app screen</image:title>
+      <image:caption>Find scheduled campus pickup and delivery options.</image:caption>
+    </image:image>
   </url>
+
+  <!-- Product and seller discovery pages. -->
   <url>
     <loc>https://defimartonline.com/about</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://defimartonline.com/how-it-works</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://defimartonline.com/sellers</loc>
-  </url>
-  <url>
-    <loc>https://defimartonline.com/policies</loc>
-  </url>
-  <url>
-    <loc>https://defimartonline.com/policies/terms</loc>
-  </url>
-  <url>
-    <loc>https://defimartonline.com/policies/privacy</loc>
-  </url>
-  <url>
-    <loc>https://defimartonline.com/policies/buyer-policy</loc>
-  </url>
-  <url>
-    <loc>https://defimartonline.com/policies/seller-policy</loc>
-  </url>
-  <url>
-    <loc>https://defimartonline.com/policies/refund-policy</loc>
-  </url>
-  <url>
-    <loc>https://defimartonline.com/policies/pickup-delivery-policy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://defimartonline.com/faq</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://defimartonline.com/contact</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Trust, compliance, and policy pages. -->
+  <url>
+    <loc>https://defimartonline.com/policies</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://defimartonline.com/policies/terms</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://defimartonline.com/policies/privacy</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://defimartonline.com/policies/buyer-policy</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://defimartonline.com/policies/seller-policy</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://defimartonline.com/policies/refund-policy</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://defimartonline.com/policies/pickup-delivery-policy</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
