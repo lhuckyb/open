@@ -1264,13 +1264,22 @@ img, svg {
   letter-spacing: -0.02em;
 }
 
-.mock-campus-tag {
-  font-size: 0.58rem;
-  font-weight: 600;
-  color: #475569;
-  background: #F1F5F9;
-  padding: 1px 5px;
-  border-radius: 4px;
+.mock-page-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 8px 10px 5px;
+  background: #F8FAFC;
+}
+
+.mock-page-heading strong {
+  font-size: 0.66rem;
+  color: #0F172A;
+}
+
+.mock-page-heading span {
+  font-size: 0.52rem;
+  color: #94A3B8;
 }
 
 .mock-photo-container {
@@ -1286,20 +1295,6 @@ img, svg {
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.mock-category-pill {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(4px);
-  color: #FFFFFF;
-  font-size: 0.58rem;
-  font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 4px;
-  letter-spacing: 0.02em;
 }
 
 .mock-listing-card {
@@ -1362,6 +1357,285 @@ img, svg {
   margin-top: 2px;
 }
 
+.mock-page-panel {
+  flex: 1;
+  padding: 8px;
+  background: #F8FAFC;
+}
+
+.mock-explore-panel {
+  flex: 1;
+  padding: 0 8px 8px;
+  background: #F8FAFC;
+}
+
+.mock-explore-heading {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.mock-search-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  margin: 2px 0 7px;
+  color: #94A3B8;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 7px;
+  font-size: 0.52rem;
+}
+
+.mock-search-box span:first-child {
+  color: #FF6F00;
+  font-size: 0.78rem;
+  line-height: 0.7;
+}
+
+.mock-filter-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.mock-filter-row span {
+  padding: 3px 6px;
+  color: #64748B;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  font-size: 0.48rem;
+  white-space: nowrap;
+}
+
+.mock-filter-row span.is-selected {
+  color: #FFFFFF;
+  background: #FF6F00;
+  border-color: #FF6F00;
+}
+
+.mock-featured-explore {
+  display: flex;
+  gap: 7px;
+  padding: 5px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+}
+
+.mock-featured-explore img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.mock-featured-explore div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.mock-featured-explore strong,
+.mock-featured-explore span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mock-featured-explore strong {
+  max-width: 132px;
+  font-size: 0.58rem;
+}
+
+.mock-featured-explore span {
+  max-width: 132px;
+  color: #94A3B8;
+  font-size: 0.48rem;
+}
+
+.mock-featured-explore b {
+  color: #FF6F00;
+  font-size: 0.58rem;
+}
+
+.mock-explore-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 2px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.mock-explore-row > div {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.mock-explore-row strong {
+  font-size: 0.54rem;
+}
+
+.mock-explore-row div span,
+.mock-explore-row > span:last-child {
+  color: #94A3B8;
+  font-size: 0.48rem;
+}
+
+.mock-explore-row > span:last-child {
+  color: #FF6F00;
+  font-size: 0.8rem;
+}
+
+.mock-explore-dot {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+  border-radius: 6px;
+}
+
+.mock-explore-dot.orange { background: #FFDEC5; }
+.mock-explore-dot.teal { background: #BFEAE7; }
+
+.mock-order-card,
+.mock-account-stat-row,
+.mock-account-link {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+}
+
+.mock-order-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.mock-order-icon,
+.mock-account-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  color: #FF6F00;
+  background: #FFF1E6;
+  border-radius: 6px;
+}
+
+.mock-order-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.mock-order-card strong,
+.mock-order-card div:nth-child(2) span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mock-order-card strong {
+  max-width: 92px;
+  font-size: 0.58rem;
+}
+
+.mock-order-card div:nth-child(2) span,
+.mock-page-note,
+.mock-account-stat-row span {
+  font-size: 0.5rem;
+  color: #94A3B8;
+}
+
+.mock-order-status {
+  margin-left: auto;
+  color: #15803D;
+  font-size: 0.48rem;
+  font-weight: 700;
+}
+
+.mock-order-steps {
+  display: flex;
+  gap: 3px;
+  margin: 12px 2px 7px;
+}
+
+.mock-order-steps span {
+  height: 3px;
+  flex: 1;
+  border-radius: 4px;
+  background: #E2E8F0;
+}
+
+.mock-order-steps span.is-complete {
+  background: #FF6F00;
+}
+
+.mock-page-note {
+  line-height: 1.4;
+  margin: 0 2px;
+}
+
+.mock-account-avatar {
+  width: 32px;
+  height: 32px;
+  margin: 9px 2px 1px;
+  color: #FFFFFF;
+  background: #FF6F00;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.mock-account-heading {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.mock-account-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding: 8px 4px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.mock-account-stat-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.mock-account-stat-row strong {
+  font-size: 0.63rem;
+  color: #0F172A;
+}
+
+.mock-account-link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 7px 8px;
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.mock-account-link span {
+  color: #FF6F00;
+  font-size: 0.75rem;
+}
+
 .mock-loc-icon {
   font-size: 0.6rem;
 }
@@ -1376,6 +1650,21 @@ img, svg {
   font-size: 0.58rem;
   font-weight: 600;
   color: #94A3B8;
+}
+
+.mock-nav-item {
+  padding: 2px 3px;
+  color: #94A3B8;
+  font: inherit;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.mock-nav-item:hover {
+  color: #475569;
+}
+
+.mock-nav-item:active {
+  transform: scale(0.94);
 }
 
 .mock-nav-item.active {

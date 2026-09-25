@@ -19,12 +19,18 @@ import {
   TrendingUp,
   PackageCheck
 } from 'lucide-react';
+import imageOne from '../../1.jpg';
+import imageTwo from '../../2.jpg';
+import imageThree from '../../3.jpg';
+import imageFour from '../../4.jpg';
+import imageFive from '../../5.jpg';
+import imageSix from '../../6.jpg';
 
 const appSlides = [
   {
     id: 'shop',
     tabLabel: 'Shop',
-    image: '/src/assets/images/textbook_stack_1790289892365.jpg',
+    image: imageOne,
     alt: 'DefiMart App Shop Screen with Course Textbooks',
     title: 'Shop, Earn, and Grow from One Unified Hub',
     category: 'Textbooks & Course Packs',
@@ -43,7 +49,7 @@ const appSlides = [
   {
     id: 'discover',
     tabLabel: 'Discover',
-    image: '/src/assets/images/tech_gadget_desk_1790289907307.jpg',
+    image: imageTwo,
     alt: 'DefiMart Discovery Stream with Student Electronics',
     title: 'Discover Verified Products Near Your Campus',
     category: 'Electronics & Dorm Tech',
@@ -62,7 +68,7 @@ const appSlides = [
   {
     id: 'independent',
     tabLabel: 'Independent',
-    image: '/src/assets/images/student_crafts_1790289952804.jpg',
+    image: imageThree,
     alt: 'DefiMart Student Vendor Storefront with Crafts and Totes',
     title: 'Independent Vendor & Campus Brand Hubs',
     category: 'Student Crafts & Apparel',
@@ -81,7 +87,7 @@ const appSlides = [
   {
     id: 'order',
     tabLabel: 'Order',
-    image: '/src/assets/images/thrift_hoodie_1790289917263.jpg',
+    image: imageFour,
     alt: 'DefiMart Pay on Pickup Checkout with Thrift Apparel',
     title: 'Order in 3 Taps with Pay on Pickup',
     category: 'Thrift & Streetwear',
@@ -100,7 +106,7 @@ const appSlides = [
   {
     id: 'track',
     tabLabel: 'Tracking',
-    image: '/src/assets/images/pickup_package_1790289942231.jpg',
+    image: imageFive,
     alt: 'DefiMart Parcel Tracking and Inspection',
     title: 'Track Orders & Manage Account Privacy',
     category: 'Verified Parcel Handoff',
@@ -119,7 +125,7 @@ const appSlides = [
   {
     id: 'pickups',
     tabLabel: 'Pickups',
-    image: '/src/assets/images/fresh_pastries_1790289927820.jpg',
+    image: imageSix,
     alt: 'DefiMart Campus Bakery and Snacks Hub',
     title: 'Predictable Campus Pickups & Direct Delivery',
     category: 'Campus Bakery & Eats',
