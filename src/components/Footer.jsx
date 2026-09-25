@@ -123,6 +123,14 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="footer-brand-tag" aria-label="DefiMart motto">
+          <span>Shop</span>
+          <span className="footer-brand-tag-divider">|</span>
+          <span>Earn</span>
+          <span className="footer-brand-tag-divider">|</span>
+          <span>Grow</span>
+        </div>
+
         {/* Bottom Bar */}
         <div className="footer-bottom-bar">
           <div className="footer-copyright">

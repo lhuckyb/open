@@ -60,6 +60,24 @@ export default function AboutPage() {
             <p>
               DefiMart introduces structured order tracking, verified vendor profiles, transparent schedules, and the <strong>Pay on Pickup</strong> guarantee. By aligning order handoffs with weekly campus routines, we make buying as natural and stress-free as meeting a friend between lectures.
             </p>
+
+            <h2>Our Vision</h2>
+            <p>
+              To become a trusted and accessible digital marketplace that connects people, businesses, and opportunities, making shopping and selling easier while creating value for everyone involved.
+            </p>
+
+            <h2>Our Mission</h2>
+            <p>
+              To make buying and selling simple, accessible, and rewarding by providing customers and vendors with a reliable digital marketplace where they can shop, sell, earn, and grow.
+            </p>
+
+            <h2>What Defi-Mart Stands For</h2>
+            <p>Defi-Mart is built around three simple ideas:</p>
+            <ul className="doc-bullets">
+              <li><strong>Shop:</strong> Give customers convenient access to products they need.</li>
+              <li><strong>Earn:</strong> Create opportunities for vendors, partners, and users to generate value.</li>
+              <li><strong>Grow:</strong> Help individuals and businesses build, expand, and achieve more through the Defi-Mart ecosystem.</li>
+            </ul>
           </div>
 
           <div className="values-grid-clean">

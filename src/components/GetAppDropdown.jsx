@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Download, ChevronDown, ExternalLink, ShieldCheck } from 'lucide-react';
 import { siteConfig } from '../siteConfig';
 import { GooglePlayIcon, AppleIcon } from './storeIcons';
@@ -29,7 +30,42 @@ export default function GetAppDropdown({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [placement, setPlacement] = useState(direction === 'up' ? 'up' : 'down');
+  const [popoverPosition, setPopoverPosition] = useState({});
   const containerRef = useRef(null);
+
+  useEffect(() => {
+    if (!isOpen || !containerRef.current) return undefined;
+
+    const updatePopoverPosition = () => {
+      const rect = containerRef.current.getBoundingClientRect();
+      const position = { position: 'fixed' };
+
+      if (placement === 'up') {
+        position.bottom = `${window.innerHeight - rect.top + 10}px`;
+      } else {
+        position.top = `${rect.bottom + 10}px`;
+      }
+
+      if (align === 'left') {
+        position.left = `${rect.left}px`;
+      } else if (align === 'center') {
+        position.left = `${rect.left + rect.width / 2}px`;
+      } else {
+        position.right = `${window.innerWidth - rect.right}px`;
+      }
+
+      setPopoverPosition(position);
+    };
+
+    updatePopoverPosition();
+    window.addEventListener('resize', updatePopoverPosition);
+    window.addEventListener('scroll', updatePopoverPosition, true);
+
+    return () => {
+      window.removeEventListener('resize', updatePopoverPosition);
+      window.removeEventListener('scroll', updatePopoverPosition, true);
+    };
+  }, [align, isOpen, placement]);
 
   // Close on outside click
   useEffect(() => {
@@ -122,9 +158,10 @@ export default function GetAppDropdown({
         />
       </button>
 
-      {isOpen && (
-        <div 
+      {isOpen && createPortal(
+        <div
           className={`get-app-popover align-${align} placement-${placement}`}
+          style={popoverPosition}
           role="menu"
           aria-orientation="vertical"
           aria-label="DefiMart App download options"
@@ -187,7 +224,8 @@ export default function GetAppDropdown({
             <ShieldCheck size={14} className="text-primary" />
             <span>100% Free · Official secure app store releases</span>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

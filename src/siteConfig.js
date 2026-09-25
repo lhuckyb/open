@@ -5,7 +5,8 @@ export const siteConfig = {
   googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.defimart.app&pcampaignid=web_share',
   appStoreUrl: 'https://apps.apple.com/mx/app/defimart/id6775976233?l=en-GB',
   openAppUrl: 'https://play.google.com/store/apps/details?id=com.defimart.app&pcampaignid=web_share',
-  sellerApplicationUrl: '#seller-form-placeholder',
+  sellerApplicationUrl: 'https://forms.gle/TeWYCdxJ2aTgrvnN6',
+  whatsappUrl: 'https://wa.me/233597204494',
   contact: {
     general: 'defimartinc@gmail.com',
     seller: 'defimartinc@gmail.com',
@@ -63,7 +64,7 @@ export const policyLinks = [
   { key: 'terms', label: 'Terms of Service', path: '/policies/terms' },
   { key: 'privacy', label: 'Privacy Policy', path: '/policies/privacy' },
   { key: 'buyer-policy', label: 'Buyer Policy', path: '/policies/buyer-policy' },
-  { key: 'seller-policy', label: 'Seller Policy', path: '/policies/seller-policy' },
-  { key: 'refund-policy', label: 'Refund & Cancellation Policy', path: '/policies/refund-policy' },
+  { key: 'seller-policy', label: 'Vendor Rules', path: '/policies/seller-policy' },
+  { key: 'refund-policy', label: 'Return & Refund Policy', path: '/policies/refund-policy' },
   { key: 'pickup-delivery-policy', label: 'Pickup / Delivery Policy', path: '/policies/pickup-delivery-policy' },
 ];

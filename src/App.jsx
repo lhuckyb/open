@@ -1,5 +1,6 @@
 import { useLayoutEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { Package, ShoppingCart, Sparkles } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollProgress from './components/ScrollProgress';
@@ -41,6 +42,38 @@ export default function App() {
   return (
     <div className="site-shell">
       <ScrollProgress />
+      <div className="ambient-motion" aria-hidden="true">
+        <span className="ambient-orbit ambient-orbit-one" />
+        <span className="ambient-orbit ambient-orbit-two" />
+        <span className="ambient-star ambient-star-one" />
+        <span className="ambient-star ambient-star-two" />
+        <span className="ambient-star ambient-star-three" />
+        <span className="ambient-sparkle ambient-sparkle-one"><Sparkles size={16} strokeWidth={1.7} /></span>
+        <span className="ambient-sparkle ambient-sparkle-two"><Sparkles size={12} strokeWidth={1.8} /></span>
+        <span className="ambient-cart ambient-cart-one"><ShoppingCart size={25} strokeWidth={1.6} /></span>
+        <span className="ambient-cart ambient-cart-two"><ShoppingCart size={19} strokeWidth={1.7} /></span>
+        <span className="ambient-package ambient-package-one"><Package size={18} strokeWidth={1.7} /></span>
+        {Array.from({ length: 4 }, (_, index) => (
+          <span key={`cart-${index}`} className={`ambient-cart ambient-cart-extra ambient-cart-extra-${index + 1}`}>
+            <ShoppingCart size={index % 2 === 0 ? 15 : 21} strokeWidth={1.7} />
+          </span>
+        ))}
+        {Array.from({ length: 4 }, (_, index) => (
+          <span key={`package-${index}`} className={`ambient-package ambient-package-extra ambient-package-extra-${index + 1}`}>
+            <Package size={index % 2 === 0 ? 13 : 16} strokeWidth={1.7} />
+          </span>
+        ))}
+        {Array.from({ length: 8 }, (_, index) => (
+          <span key={`sparkle-${index}`} className={`ambient-sparkle ambient-sparkle-extra ambient-sparkle-extra-${index + 1}`}>
+            <Sparkles size={index % 3 === 0 ? 13 : 9} strokeWidth={1.8} />
+          </span>
+        ))}
+        {Array.from({ length: 8 }, (_, index) => (
+          <span key={`star-${index}`} className={`ambient-star ambient-star-extra ambient-star-extra-${index + 1}`} />
+        ))}
+        <span className="ambient-drift-circle ambient-drift-circle-one" />
+        <span className="ambient-drift-circle ambient-drift-circle-two" />
+      </div>
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>

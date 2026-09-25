@@ -68,6 +68,22 @@ export default function ContactPage() {
                 </div>
               );
             })}
+            <div className="contact-card-modern stagger-item-1">
+              <div className="contact-card-icon-box">
+                <Phone size={22} />
+              </div>
+              <h3>WhatsApp Support</h3>
+              <p>Message our team directly for quick questions, vendor support, and onboarding assistance.</p>
+              <a
+                href={siteConfig.whatsappUrl}
+                className="contact-email-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>+233 597 204 494</span>
+                <ArrowRight size={14} />
+              </a>
+            </div>
           </div>
 
           <div className="contact-dispatch-box">

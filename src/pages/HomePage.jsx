@@ -182,7 +182,8 @@ export default function HomePage() {
             {/* Left Content */}
             <div className="hero-text-block">
               <h1 className="hero-title">
-                Smart campus shopping.
+                Smart online shopping.
+                <br className="hero-mobile-break" />
                 <span className="hero-title-accent">Zero transaction risk.</span>
               </h1>
 
@@ -193,10 +194,6 @@ export default function HomePage() {
               {/* Action Buttons */}
               <div className="hero-cta-group">
                 <StoreButtons variant="hero" />
-                <Link to="/sellers" className="btn btn-secondary btn-outline">
-                  <span>Register Storefront</span>
-                  <ArrowRight size={16} />
-                </Link>
               </div>
 
               {/* Trust Indicators */}

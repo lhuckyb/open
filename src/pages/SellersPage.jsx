@@ -58,8 +58,10 @@ export default function SellersPage() {
             DefiMart gives student entrepreneurs, bakers, thrift curators, tech fixers, and local businesses a modern, dedicated sales platform.
           </p>
           <div className="hero-cta-inline">
-            <a 
-              href={`mailto:${siteConfig.contact.seller}?subject=Seller%20Application%20Inquiry`} 
+            <a
+              href={siteConfig.sellerApplicationUrl}
+              target="_blank"
+              rel="noreferrer"
               className="btn btn-primary"
             >
               <span>Apply for Vendor Account</span>
@@ -139,8 +141,10 @@ export default function SellersPage() {
             </ul>
 
             <div className="standards-cta-row">
-              <a 
-                href={`mailto:${siteConfig.contact.seller}?subject=Seller%20Onboarding%20Interest`}
+              <a
+                href={siteConfig.sellerApplicationUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="btn btn-primary"
               >
                 Start Vendor Application

@@ -6,7 +6,7 @@ import { policyLastUpdated } from '../policyContent';
 import { ShieldCheck, FileText, ChevronRight, CheckCircle2 } from 'lucide-react';
 
 export default function PoliciesPage() {
-  const officialPolicies = ['terms', 'privacy'];
+  const officialPolicies = ['terms', 'privacy', 'refund-policy', 'seller-policy'];
 
   return (
     <div className="inner-page-layout">
