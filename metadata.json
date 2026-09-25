@@ -1,0 +1,6 @@
+{
+  "name": "DefiMart Landing Page",
+  "description": "Student-first marketplace landing page built around smart shopping, local discovery, and everyday earning and growth.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
